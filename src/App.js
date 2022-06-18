@@ -71,7 +71,6 @@ function App() {
 
   useEffect(() => {
     if(color) document.body.style.background = color;
-    if(color) document.querySelector(".RKnrV").style.backgroundColor = color;
 
   }, [color]);
 
