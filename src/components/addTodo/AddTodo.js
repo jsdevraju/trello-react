@@ -24,7 +24,6 @@ const AddTodo = ({
     localStorage.setItem("data", JSON.stringify([todoObj, ...todos]));
   };
 
-  console.log(todos);
 
   return (
     <>
