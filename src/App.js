@@ -12,7 +12,6 @@ function App() {
   const [myData, setMyData] = useState([]);
   const [showTheme, setShowTheme] = useState(false);
   const [color, setColor] = useState("fff");
-  console.log(myData?.length === 0 ? true: false)
   const data = {
     lanes: [
       {
@@ -71,6 +70,7 @@ function App() {
 
   useEffect(() => {
     if(color) document.body.style.background = color;
+    if(color) document.querySelector(".fFoved").style.backgroundColor = color;
 
   }, [color]);
 
