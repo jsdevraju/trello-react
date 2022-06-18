@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background: #3179ba;
+}
+
+.change_bg {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    border:none;
+    outline: none;
+    background: darkblue;
+    padding: 0.6em 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.change_theme{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    display: flex;
+    width: 120px;
+    z-index: 100;
+    flex-direction: column;
+    background-color: #ddd;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.change_theme.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.RKnrV {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.header h1 {
+    color: #fff;
+}
+
+.form_control {
+    width: 550px;
+}
+
+.form_control input {
+    width: 100%;
+    margin-top: 1em;
+    display: block;
+    padding: 1em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background: #FF7396;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width:768px){
+    .RKnrV {
+        flex-direction: column;
+    }
+    
+    .smooth-dnd-container.horizontal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    
+    .smooth-dnd-draggable-wrapper {
+        width: 100% !important;
+    }
+    
+    section.sc-iBkjds.fWjpFd.react-trello-lane {
+        width: 736px !important;
+    }
+}
+
+@media (max-width:550px){
+    section.sc-iBkjds.fWjpFd.react-trello-lane {
+        width: 100% !important;
+    }
+
+    .header h1 {
+        font-size: 1.4em;
+    }
+
+    .form_control {
+        width: 100%;
+    }
 }
