@@ -58,7 +58,11 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.fFoved{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
 .header {
     display: flex;
     justify-content: center;
@@ -106,7 +110,9 @@ form button {
     .RKnrV {
         flex-direction: column;
     }
-    
+    .fFoved{
+        flex-direction: column;
+    }
     .smooth-dnd-container.horizontal {
         display: flex;
         flex-direction: column;

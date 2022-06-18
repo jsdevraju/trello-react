@@ -21,8 +21,8 @@ const AddTodo = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!title) toast.error("Title is required");
-    if(!description) toast.error("Title is description");
+    if(!title) return toast.error("Title is required");
+    if(!description) return toast.error("Title is description");
     setTodos([...todos, todoObj]);
     localStorage.setItem("data", JSON.stringify([todoObj, ...todos]));
   };
