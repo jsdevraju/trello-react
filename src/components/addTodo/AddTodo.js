@@ -1,5 +1,6 @@
 import Input from "../input/Input";
 import Button from "../button/Button";
+import toast from "react-hot-toast";
 
 const AddTodo = ({
   title,
@@ -20,6 +21,8 @@ const AddTodo = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(!title) toast.error("Title is required");
+    if(!description) toast.error("Title is description");
     setTodos([...todos, todoObj]);
     localStorage.setItem("data", JSON.stringify([todoObj, ...todos]));
   };
